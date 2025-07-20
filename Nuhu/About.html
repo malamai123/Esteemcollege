@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Esteem College of Health Sciences & Technology</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Ubuntu', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    .hero {
+      background: url('img/school-hero.jpg') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.6);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: bold;
+    }
+    .info-card:hover {
+      transform: scale(1.03);
+      transition: all 0.3s ease-in-out;
+    }
+    .mission-section, .courses-section {
+      background-color: #ffffff;
+      padding: 4rem 1rem;
+    }
+    .course-card {
+      border-left: 4px solid #0d6efd;
+      padding-left: 1rem;
+    }
+    footer {
+      background-color: #003366;
+      color: #ffffff;
+      padding: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">Esteem College</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="portal.html">Portal</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content container">
+      <h1>Excellence in Health Science Education</h1>
+      <p class="lead mt-3">Empowering future healthcare leaders from Giwa, Kaduna State</p>
+      <a href="about.html" class="btn btn-light btn-lg mt-4">Discover More</a>
+    </div>
+  </section>
+
+  <!-- Cards Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-md-4">
+          <div class="card shadow info-card h-100">
+            <div class="card-body">
+              <i class="fas fa-user-graduate fa-3x text-primary mb-3"></i>
+              <h5 class="card-title">Student Portal</h5>
+              <p class="card-text">Access academic records, results, notices and more.</p>
+              <a href="login.html" class="btn btn-outline-primary">Access Portal</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow info-card h-100">
+            <div class="card-body">
+              <i class="fas fa-images fa-3x text-success mb-3"></i>
+              <h5 class="card-title">Gallery</h5>
+              <p class="card-text">View highlights of events, campus life, and achievements.</p>
+              <a href="gallery.html" class="btn btn-outline-success">Browse Gallery</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow info-card h-100">
+            <div class="card-body">
+              <i class="fas fa-phone fa-3x text-danger mb-3"></i>
+              <h5 class="card-title">Contact Us</h5>
+              <p class="card-text">Reach out for inquiries, support, or school visits.</p>
+              <a href="contact.html" class="btn btn-outline-danger">Contact Info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Offered -->
+  <section class="courses-section text-center">
+    <div class="container">
+      <h2 class="mb-4">Courses Offered</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-start">
+          <div class="mb-3 course-card">
+            <h5>1. Community Health Extension Workers (CHEW)</h5>
+          </div>
+          <div class="mb-3 course-card">
+            <h5>2. Junior Community Health Extension Workers (JCHEW)</h5>
+          </div>
+          <div class="mb-3 course-card">
+            <h5>3. Medical Laboratory Technician (MLT)</h5>
+          </div>
+          <div class="mb-3 course-card">
+            <h5>4. Pharmacy Technician</h5>
+          </div>
+          <div class="mb-3 course-card">
+            <h5>5. Health Information Management (HIM)</h5>
+          </div>
+          <div class="mb-3 course-card">
+            <h5>6. Environmental Health Technology (EHT)</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Statement -->
+  <section class="mission-section text-center">
+    <div class="container">
+      <h2 class="mb-4">Our Mission</h2>
+      <p class="fs-5">To produce skilled and compassionate health professionals with knowledge, integrity, and a commitment to serving the community and the nation at large.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 Esteem College of Health Sciences and Technology</p>
+      <small>Located in Giwa Local Government, Kaduna State, Nigeria</small>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAk_0JxGxv2wlzGld76p2a2sIcVlKBoFSk",
+  authDomain: "esteem-e0d2a.firebaseapp.com",
+  projectId: "esteem-e0d2a",
+  storageBucket: "esteem-e0d2a.firebasestorage.app",
+  messagingSenderId: "840871022740",
+  appId: "1:840871022740:web:6916cb40f182f7e4be2481",
+  measurementId: "G-FDR0Q5YLMV"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+  </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Portal | Esteem College</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      margin-top: 40px;
+    }
+    h2 {
+      color: #003366;
+      margin-bottom: 30px;
+    }
+    table {
+      background-color: #fff;
+    }
+    th {
+      background-color: #003366;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Submitted Applications</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Full Name</th>
+            <th>Date of Birth</th>
+            <th>Primary School</th>
+            <th>Secondary School</th>
+            <th>Father's Name</th>
+            <th>Phone</th>
+            <th>Course</th>
+            <th>Photo</th>
+          </tr>
+        </thead>
+        <tbody id="applicationsTable">
+          <!-- Data will be inserted here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    const appData = JSON.parse(localStorage.getItem('studentApplications')) || [];
+    const tableBody = document.getElementById('applicationsTable');
+
+    appData.forEach(app => {
+      const row = document.createElement('tr');
+
+      row.innerHTML = `
+        <td>${app.fullName}</td>
+        <td>${app.dob}</td>
+        <td>${app.primarySchool}</td>
+        <td>${app.secondarySchool}</td>
+        <td>${app.fatherName}</td>
+        <td>${app.fatherPhone}</td>
+        <td>${app.course}</td>
+        <td><img src="${app.photo}" width="60" height="60" style="object-fit:cover;"></td>
+      `;
+
+      tableBody.appendChild(row);
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
